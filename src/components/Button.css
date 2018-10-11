@@ -1,0 +1,160 @@
+.default {
+    display: inline-block; 
+    border-top-left-radius: 9999px; 
+    border-top-right-radius: 9999px; 
+    border-bottom-right-radius: 9999px; 
+    border-bottom-left-radius: 9999px; 
+    line-height: 1; 
+    padding: 1em 14px; 
+    font-size: 12px; 
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: all 0.2s; 
+    font-family: Raleway, sans-serif; 
+    letter-spacing: 0.02em; 
+    background-color: rgb(255, 255, 255); 
+    color: rgb(255, 120, 0); 
+    box-shadow: rgb(255, 120, 0) 0px 0px 0px 1px 
+    inset; margin-right: 10px; 
+    background-position: initial initial; 
+    background-repeat: initial initial;
+}
+
+.defaultDisable {
+    display: inline-block; 
+    border-top-left-radius: 9999px; 
+    border-top-right-radius: 9999px; 
+    border-bottom-right-radius: 9999px; 
+    border-bottom-left-radius: 9999px; 
+    line-height: 1; 
+    padding: 1em 14px; 
+    font-size: 12px; 
+    font-weight: 500; 
+    cursor: default; 
+    transition: all 0.2s; 
+    font-family: Raleway, sans-serif; 
+    letter-spacing: 0.02em; 
+    background-color: rgb(255, 255, 255); 
+    color: rgb(201, 201, 201); 
+    box-shadow: rgb(201, 201, 201) 0px 0px 0px 1px inset; 
+    background-position: initial initial; 
+    background-repeat: initial initial;
+}
+
+.primary {
+    display: inline-block; 
+    border-top-left-radius: 9999px; 
+    border-top-right-radius: 9999px; 
+    border-bottom-right-radius: 9999px; 
+    border-bottom-left-radius: 9999px; 
+    line-height: 1; 
+    padding: 1em 14px; 
+    font-size: 12px; 
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: all 0.2s; 
+    font-family: Raleway, sans-serif; 
+    letter-spacing: 0.02em; 
+    background-color: rgb(255, 120, 0); 
+    color: rgb(255, 255, 255); 
+    box-shadow: none; 
+    margin-right: 10px; 
+    background-position: initial initial; 
+    background-repeat: initial initial;
+}
+
+.primaryDisable {
+    display: inline-block; 
+    border-top-left-radius: 9999px; 
+    border-top-right-radius: 9999px; 
+    border-bottom-right-radius: 9999px; 
+    border-bottom-left-radius: 9999px; 
+    line-height: 1; 
+    padding: 1em 14px; 
+    font-size: 12px; 
+    font-weight: 500; 
+    cursor: default; 
+    transition: all 0.2s; 
+    font-family: Raleway, sans-serif; 
+    letter-spacing: 0.02em;
+    background-color: rgb(201, 201, 201); 
+    color: rgb(255, 255, 255); 
+    box-shadow: none; 
+    background-position: initial initial; 
+    background-repeat: initial initial;
+}
+
+.secondary {
+    display: inline-block; 
+    border-top-left-radius: 9999px; 
+    border-top-right-radius: 9999px; 
+    border-bottom-right-radius: 9999px; 
+    border-bottom-left-radius: 9999px; 
+    line-height: 1; padding: 1em 14px; 
+    font-size: 12px; font-weight: 500; 
+    cursor: pointer; 
+    transition: all 0.2s; 
+    font-family: Raleway, sans-serif; 
+    letter-spacing: 0.02em; 
+    background-color: rgb(249, 249, 249); 
+    color: rgb(50, 50, 127); 
+    box-shadow: none; 
+    margin-right: 10px; 
+    background-position: initial initial; 
+    background-repeat: initial initial;
+}
+
+.secondaryDisable {
+    display: inline-block; 
+    border-top-left-radius: 9999px; 
+    border-top-right-radius: 9999px; 
+    border-bottom-right-radius: 9999px; 
+    border-bottom-left-radius: 9999px; 
+    line-height: 1; 
+    padding: 1em 14px; 
+    font-size: 12px; 
+    font-weight: 500; 
+    cursor: default; 
+    transition: all 0.2s; 
+    font-family: Raleway, sans-serif; 
+    letter-spacing: 0.02em; 
+    background-color: rgb(249, 249, 249); 
+    color: rgb(201, 201, 201); 
+    box-shadow: none; 
+    background-position: initial initial; 
+    background-repeat: initial initial;
+}
+
+.flat {
+    display: inline-block; 
+    border-top-left-radius: 9999px; 
+    border-top-right-radius: 9999px; 
+    border-bottom-right-radius: 9999px; 
+    border-bottom-left-radius: 9999px; 
+    line-height: 1; 
+    padding: 6px 14px; 
+    font-size: 12px; 
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: all 0.2s; 
+    font-family: Raleway, sans-serif; 
+    letter-spacing: 0.02em; 
+    margin-right: 10px;
+}
+
+.flatDisable {
+    display: inline-block; 
+    border-top-left-radius: 9999px; 
+    border-top-right-radius: 9999px; 
+    border-bottom-right-radius: 9999px; 
+    border-bottom-left-radius: 9999px; 
+    line-height: 1; 
+    padding: 6px 14px; 
+    font-size: 12px; 
+    font-weight: 500; 
+    cursor: default; 
+    transition: all 0.2s; 
+    font-family: Raleway, sans-serif; 
+    letter-spacing: 0.02em; 
+    color: rgb(201, 201, 201);
+}
