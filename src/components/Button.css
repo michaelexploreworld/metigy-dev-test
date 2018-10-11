@@ -20,6 +20,17 @@
     background-repeat: initial initial;
 }
 
+.default:hover {
+    color: rgb(74, 144, 226); 
+    box-shadow: rgb(74, 144, 226) 0px 0px 0px 1px inset;
+}
+
+.default:active {
+    transition: all 0.2s, background 0s, color 0s; 
+    background-color: rgb(74, 144, 226);
+    color: rgb(255,255,255);
+} 
+
 .defaultDisable {
     display: inline-block; 
     border-top-left-radius: 9999px; 
@@ -62,6 +73,18 @@
     background-position: initial initial; 
     background-repeat: initial initial;
 }
+
+.primary:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 120, 0); 
+    box-shadow: rgb(255, 120, 0) 0px 0px 0px 1px inset;
+}
+
+.primary:active {
+    transition: all 0.2s, background 0s, color 0s; 
+    background-color: rgb(255, 120, 0); 
+    color: rgb(255,255,255);
+} 
 
 .primaryDisable {
     display: inline-block; 
@@ -106,6 +129,16 @@
     background-repeat: initial initial;
 }
 
+.secondary:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(74, 144, 226); 
+    box-shadow: rgb(74, 144, 226) 0px 0px 0px 1px inset;
+}
+
+.secondary:active {
+    transition: all 0.2s, background 0s, color 0s;
+} 
+
 .secondaryDisable {
     display: inline-block; 
     border-top-left-radius: 9999px; 
@@ -143,6 +176,14 @@
     letter-spacing: 0.02em; 
     margin-right: 10px;
 }
+
+.flat:hover {
+    opacity: 0.6;
+}
+
+.flat:active {
+    opacity: 1;
+} 
 
 .flatDisable {
     display: inline-block; 
