@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import './Button.css';
@@ -42,21 +42,61 @@ const generateType = (primary, secondary, flat, disabled) => {
     }
 }
 
-const Button = ({ 
-        primary,
-        secondary,
-        flat,
-        label,
-        disabled
-    }) => {
-        const type = generateType(primary, secondary, flat, disabled);
-        const disabledVal = (disabled === true) ? disabled : false;
+class Button extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { 
+            type: TYPES.DEFAULT,
+            disabled: false,
+            label: ""
+        };
+    }
+
+    updateState = (primary, secondary, flat, label, disabled)  => {
+        const newType = generateType(primary, secondary, flat, disabled);
+        const newDisableVal = (disabled === true) ? disabled: false;
+        const newLabel = label || ""; 
+
+        this.setState({
+            type: newType,
+            disabled: newDisableVal,
+            label: newLabel
+        });
+    }
+
+    componentWillMount = () => {
+        const { 
+            primary, 
+            secondary,
+            flat,
+            label,
+            disabled
+        } = this.props;
+        this.updateState(primary, secondary, flat, label, disabled);
+    }
+
+    componentDidUpdate(prevProps) {
+        if (JSON.stringify(this.props) !== JSON.stringify(prevProps)) {
+            const { 
+                primary, 
+                secondary,
+                flat,
+                label,
+                disabled
+            } = this.props;
+            this.updateState(primary, secondary, flat, label, disabled);
+        }
+    }
+
+    render = () => {
+        const { type, disabled, label } = this.state;
         return (
-            <div className={type} disabled={disabledVal}>
+            <div className={type} disabled={disabled} >
                 {label}
             </div>
         )
-    };
+    }
+}
 
 Button.propTypes = {
     primary: PropTypes.bool,
